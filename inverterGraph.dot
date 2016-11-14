@@ -1,0 +1,18 @@
+digraph graf {
+
+  name="inverter"
+  
+  260 [label="ids = 6e-05", style=filled, fillcolor=chartreuse3];
+  263 [label="id = 0", style=filled, fillcolor=chartreuse3];
+  274 [label="id = 0", style=filled, fillcolor=red];
+  293 [label="equ_m0.id", shape="rectangle"];
+  297 [label="equ_m1.id", shape="rectangle"];
+  301 [label="KCL", shape="rectangle"];
+
+  293 -> 263
+  260 -> 293
+  297 -> 274
+  260 -> 297
+  263 -> 301
+  301 -> 274
+}
